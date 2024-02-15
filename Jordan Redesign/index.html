@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ION Icons CDN -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Plus Jakarta Sans Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+
+    <!-- flowbite CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+
+    <title>Ken's Air Jordan</title>
+
+    <!-- Style -->
+    <style>
+        .font-jakarta {
+            font-family: "Plus Jakarta Sans", sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .container-popular {
+            width: 90vw;
+            padding-bottom: 35px;
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            row-gap: 50px;
+            column-gap: 1.2%;
+        }
+
+        @media screen and (max-width:1000px) {
+            .container-popular {
+                grid-template-columns: 50% 50%;
+                column-gap: 30px;
+            }
+        }
+
+        @media screen and (max-width:590px) {
+            .container-popular {
+                grid-template-columns: 100%;
+                row-gap: 30px;
+                column-gap: 0;
+            }
+        }
+    </style>
+</head>
+
+<body class="font-jakarta">
+    <!--* E-Commerce Website (Nike [Air Jordan] Theme) -->
+    <!--! Notifications -->
+    <div id="marketing-banner" tabindex="-1"
+        class="fixed z-[10000] flex flex-col md:flex-row justify-between w-[90%] p-4 -translate-x-1/2 bg-white border border-gray-300 rounded-lg shadow-sm left-1/2 top-2 ">
+        <div class="flex flex-col items-start mb-3 me-4 md:items-center md:flex-row md:mb-0">
+            <a href="https://flowbite.com/"
+                class="flex items-center mb-2 border-gray-200 md:pe-4 md:me-4 md:border-e md:mb-0 dark:border-gray-600">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/37/Jumpman_logo.svg/1200px-Jumpman_logo.svg.png"
+                    class="h-6 me-2" alt="Flowbite Logo">
+                <span class="self-center text-lg font-semibold whitespace-nowrap">Jordan's Website Redesign</span>
+            </a>
+            <p class="flex items-center text-sm font-normal text-gray-500">This Website is Redesigned by Keenan Abigail
+            </p>
+        </div>
+        <div class="flex items-center flex-shrink-0">
+            <a href="https://bento.me/kenbigail"
+                class="px-5 py-2 me-2 text-xs font-medium text-white bg-black hover:scale-[110%] duration-200 rounded-lg">Get
+                to know Keenan</a>
+            <button data-dismiss-target="#marketing-banner" type="button"
+                class="flex-shrink-0 inline-flex justify-center w-7 h-7 items-center text-gray-400 rounded-lg text-sm p-1.5 hover:bg-black hover:text-white duration-200">
+                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                </svg>
+                <span class="sr-only">Close banner</span>
+            </button>
+        </div>
+    </div>
+    <!--! Notifications -->
+
+    <!--! Navigation Bar -->
+    <section id="navbar" class="navbar w-full border-b py-2 bg-white fixed top-0 z-50">
+        <nav class="flex flex-row w-full max-md:w-5/6 mx-auto justify-around items-center ">
+            <div class="logo flex w-1/5 justify-start items-center max-lg:w-2/5 hover:saturate-200 duration-300">
+                <img class="w-full h-16 object-contain object-left rounded-md hover:rounded-tr-3xl mr-1 max-lg:mr-0 duration-300 max-md:hidden"
+                    src="https://upload.wikimedia.org/wikipedia/en/thumb/3/37/Jumpman_logo.svg/1200px-Jumpman_logo.svg.png"
+                    alt="">
+                <img class="size-20 rounded-md hover:rounded-tr-3xl mr-1 max-lg:mr-0 duration-300 hidden max-md:block"
+                    src="https://upload.wikimedia.org/wikipedia/en/thumb/3/37/Jumpman_logo.svg/1200px-Jumpman_logo.svg.png"
+                    alt="">
+            </div>
+            <div
+                class="items md:min-h-fit top-28 -right-40 w-auto md:flex justify-center md:static absolute duration-300">
+                <ul class="flex text-base text-gray-700 md:flex-row items-end flex-col ml-5 gap-8 max-md:gap-6">
+                    <li><a class="font-light hover:text-black hover:underline duration-300 max-md:bg-white p-2 rounded max-md:border border-black"
+                            href="#essentials">Essentials</a></li>
+                    <li><a class="font-light hover:text-black hover:underline duration-300 max-md:bg-white p-2 rounded max-md:border border-black"
+                            href="#popular">Popular</a></li>
+                    <li><a class="font-light hover:text-black hover:underline duration-300 max-md:bg-white p-2 rounded max-md:border border-black"
+                            href="#explore">Explore</a></li>
+                </ul>
+            </div>
+            <div class="btn flex w-1/5 justify-end items-center max-lg:h-14 max-lg:w-2/5">
+                <input type="text" placeholder="Search" class="border-gray-300 p-2 rounded-md h-full w-full">
+                <ion-icon class="size-14 hover:cursor-pointer md:hidden ml-2" onclick="onToggle(this)" name="menu">
+                </ion-icon>
+            </div>
+        </nav>
+    </section>
+    <!--! Navigation Bar -->
+
+    <!--! Hero -->
+    <section id="hero" class="w-full h-screen flex flex-col items-center justify-center">
+        <div
+            class="jordan-zion w-[90%] h-[55%] bg-[url(https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/389074dd-24cb-40bb-8445-1367931b3418/zion-3-gen-zion-little-kids-shoes-Q2DdFQ.png)] bg-no-repeat bg-center bg-cover">
+        </div>
+        <div class="title-zion w-auto h-auto my-7 text-center">
+            <h2 class="text-xl md:text-3xl font-bold mb-3">AIR JORDAN</h2>
+            <h2 class="text-2xl md:text-5xl font-bold mb-3">"ZION III BLACK & WHITE"</h2>
+            <h2 class="text-xs md:text-sm font-light">inspired by the levitation of pelicans returning shining star
+                "Zion
+                Williamson"</h2>
+        </div>
+        <div class="button-shop">
+            <a href="#"
+                class="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1">
+                <span
+                    class="absolute inset-0 w-full h-full bg-gradient-to-br from-slate-900 via-slate-600 to-slate-400"></span>
+                <span
+                    class="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-black rounded-full opacity-30 group-hover:rotate-90 ease"></span>
+                <span class="relative text-white">Seek Greatness</span>
+            </a>
+        </div>
+    </section>
+    <!--! Hero -->
+
+    <!--! Essentials -->
+    <section id="essentials" class="w-full h-[90vh] flex flex-col justify-center items-center">
+        <div class="title w-auto h-auto md:mb-5">
+            <h1 class="text-2xl md:text-3xl font-extrabold">THE JORDAN ESSENTIALS</h1>
+        </div>
+        <div class="card-container w-[90%] h-3/4 py-3 px-3 flex flex-row justify-center">
+            <div class="card w-[33%] h-full flex flex-col justify-center items-center mr-5 hover:cursor-pointer">
+                <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/bfec3323-90ba-4a1c-acdf-4e5a688f9121/air-jordan-1-high-method-of-make-womens-shoes-hCCcBh.png"
+                    alt="" class="w-full h-3/4 object-cover hover:brightness-110 duration-150">
+                <div class="text w-full h-auto hidden md:my-5 md:block">
+                    <h2 class="text-xl font-medium">AIR JORDAN 1</h2>
+                </div>
+            </div>
+            <div class="card w-[33%] h-full flex flex-col justify-center items-center hover:cursor-pointer">
+                <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/5107d984-074f-4387-aaac-4df601983c5f/luka-2-basketball-shoes-vD5Vwt.png"
+                    alt="" class="w-full h-3/4 object-cover hover:brightness-110 duration-150">
+                <div class="text w-full h-auto hidden md:my-5 md:block">
+                    <h2 class="text-xl font-medium">BASKETBALL SHOES</h2>
+                </div>
+            </div>
+            <div class="card w-[33%] h-full flex flex-col justify-center items-center ml-5 hover:cursor-pointer">
+                <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/a2664966-5b14-416e-ae17-eca9b6185d3e/jordan-brooklyn-fleece-womens-pullover-hoodie-8RPvsq.png"
+                    alt="" class="w-full h-3/4 object-cover hover:brightness-110 duration-150">
+                <div class="text w-full h-auto hidden md:my-5 md:block">
+                    <h2 class="text-xl font-medium">COMPLETE THE LOOK</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--! Essentials -->
+
+    <!--! Popular Choices -->
+    <section id="popular" class="w-full h-auto flex flex-col justify-center items-center my-10">
+        <div class="title-popular w-[90%] h-[5vh] flex justify-start items-start">
+            <h1 class="text-2xl md:text-3xl font-extrabold">POPULAR CHOICES</h1>
+        </div>
+        <div class="section-popular h-auto flex justify-center mt-10">
+            <div class="container-popular">
+                <div
+                    class="card-popular w-[95%] h-[50vh] bg-[url(https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f5effa92-d594-4be5-9cf4-0030dc105f6c/air-jordan-3-retro-craft-ivory-mens-shoes-R60dgp.png)] bg-no-repeat bg-center bg-cover hover:cursor-pointer duration-200">
+                    <div
+                        class="text w-full h-full flex opacity-0 hover:opacity-100 bg-black bg-opacity-40 items-end pl-5 pb-5 duration-200">
+                        <h1 class="text-lg text-white font-bold">
+                            AIR JORDAN 3 RETRO CRAFT "IVORY"</h1>
+                    </div>
+                </div>
+
+                <div
+                    class="card-popular w-[95%] h-[50vh] bg-[url(https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/4225bc28-5820-4ca9-9037-acc6f59fcd34/air-jordan-6-retro-yellow-ochre-mens-shoes-QLGPHR.png)] bg-no-repeat bg-center bg-cover hover:cursor-pointer duration-200">
+                    <div
+                        class="text w-full h-full flex opacity-0 hover:opacity-100 bg-black bg-opacity-40 items-end pl-5 pb-5 duration-200">
+                        <h1 class="text-lg text-white font-bold">
+                            AIR JORDAN 6 RETRO "YELLOW OCHRE"</h1>
+                    </div>
+                </div>
+
+                <div
+                    class="card-popular w-[95%] h-[50vh] bg-[url(https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/6502590e-e026-414c-acd7-89ad2a613050/jordan-6-rings-mens-shoes-QvDWPB.png)] bg-no-repeat bg-center bg-cover hover:cursor-pointer duration-200">
+                    <div
+                        class="text w-full h-full flex opacity-0 hover:opacity-100 bg-black bg-opacity-40 items-end pl-5 pb-5 duration-200">
+                        <h1 class="text-lg text-white font-bold">
+                            JORDAN 6 RINGS</h1>
+                    </div>
+                </div>
+
+                <div
+                    class="card-popular w-[95%] h-[50vh] bg-[url(https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/bcc8e2c5-cf3c-4b9a-969e-ccd311b34435/air-jordan-1-elevate-low-womens-shoes-x3Qq8C.png)] bg-no-repeat bg-center bg-cover hover:cursor-pointer duration-200">
+                    <div
+                        class="text w-full h-full flex opacity-0 hover:opacity-100 bg-black bg-opacity-40 items-end pl-5 pb-5 duration-200">
+                        <h1 class="text-lg text-white font-bold">
+                            AIR JORDAN 1 ELEVATE LOW</h1>
+                    </div>
+                </div>
+
+                <div
+                    class="card-popular w-[95%] h-[50vh] bg-[url(https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/0a9043f7-fc42-4083-85ee-ee8bcd312601/air-jordan-1-high-method-of-make-womens-shoes-hCCcBh.png)] bg-no-repeat bg-center bg-cover hover:cursor-pointer duration-200">
+                    <div
+                        class="text w-full h-full flex opacity-0 hover:opacity-100 bg-black bg-opacity-40 items-end pl-5 pb-5 duration-200">
+                        <h1 class="text-lg text-white font-bold">
+                            JORDAN 1 HIGH METHOD OF MAKE</h1>
+                    </div>
+                </div>
+
+                <div
+                    class="card-popular w-[95%] h-[50vh] bg-[url(https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/4cafebb3-f226-49ae-b3a7-ac3c3c44555c/air-jordan-1-mid-se-big-kids-shoes-hfXjW4.png)] bg-no-repeat bg-center bg-cover hover:cursor-pointer duration-200">
+                    <div
+                        class="text w-full h-full flex opacity-0 hover:opacity-100 bg-black bg-opacity-40 items-end pl-5 pb-5 duration-200">
+                        <h1 class="text-lg text-white font-bold">
+                            AIR JORDAN 1 MID SE</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--! Popular Choices -->
+
+    <!--! Explore -->
+    <section id="explore" class="w-full h-auto md:h-[90vh] flex flex-col justify-center items-center">
+        <div class="title w-auto h-auto md:mb-5">
+            <h1 class="text-2xl md:text-3xl font-extrabold">EXPLORE GREATNESS.</h1>
+        </div>
+        <div
+            class="card-container w-[90%] h-auto md:h-3/4 py-3 px-3 flex flex-col md:flex-row justify-center items-center">
+            <div class="card w-[90%] md:w-[33%] h-full flex justify-center items-center hover:cursor-pointer mt-10">
+                <img src="https://static.nike.com/a/images/f_auto,cs_srgb/w_1536,c_limit/4953dc96-c444-41e3-8744-0ed02ad2b7ad/image.png"
+                    alt="" class="w-full h-full object-cover md:object-fill hover:brightness-110 duration-150">
+            </div>
+            <div
+                class="card w-[90%] md:w-[33%] h-full flex justify-center items-center hover:cursor-pointer mt-10 md:mr-6">
+                <img src="https://static.nike.com/a/images/f_auto/dpr_3.0,cs_srgb/w_300,c_limit/cff04dc1-fd52-492d-80a3-f1df0f544af7/image.png"
+                    alt="" class="w-full h-full object-cover md:object-fill hover:brightness-110 duration-150">
+            </div>
+            <div class="card w-[90%] md:w-[33%] h-full flex justify-center items-center hover:cursor-pointer mt-10">
+                <img src="https://static.nike.com/a/images/f_auto/dpr_3.0,cs_srgb/w_300,c_limit/3cd00f43-e5b2-4da8-bef0-8a7eac1217b7/image.png"
+                    alt=""
+                    class="w-full h-full object-cover md:object-fill hover:brightness-110 rounded-2xl duration-150">
+            </div>
+        </div>
+    </section>
+    <!--! Explore -->
+
+    <!-- ! Bottom Logo -->
+    <section id="bottomlogo" class="w-full h-[10vh] flex justify-center items-center">
+        <img class="h-10"
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/3/37/Jumpman_logo.svg/1200px-Jumpman_logo.svg.png"
+            alt="jordan logo">
+    </section>
+    <!--! Bottom Logo -->
+
+    <!--! Footer -->
+    <footer class="bg-black">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0">
+                    <a href="https://bento.me/kenbigail" class="flex items-center">
+                        <img src="https://i.pinimg.com/736x/cf/9f/87/cf9f8781ed02f70b72b64cec0960a4ca.jpg"
+                            class="h-8 me-3" alt="FlowBite Logo" />
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Keenan's Air
+                            Jordan</span>
+                    </a>
+                </div>
+                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
+                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="https://flowbite.com/" class="hover:underline">Flowbite</a>
+                            </li>
+                            <li>
+                                <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
+                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="https://about.nike.com/en" class="hover:underline ">About Nike</a>
+                            </li>
+                            <li>
+                                <a href="http://investors.nike.com/" class="hover:underline">Investors</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Promotions &
+                            Discounts</h2>
+                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="https://www.nike.com/help/a/student-discount"
+                                    class="hover:underline">Student</a>
+                            </li>
+                            <li>
+                                <a href="https://www.nike.com/help/a/military-discount"
+                                    class="hover:underline">Military</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a
+                        href="https://bento.me/kenbigail" class="hover:underline">Pendekar Groups™</a>. All Rights
+                    Reserved.
+                </span>
+                <div class="flex mt-4 sm:justify-center sm:mt-0">
+                    <a href="https://www.facebook.com/nike"
+                        class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 8 19">
+                            <path fill-rule="evenodd"
+                                d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">Facebook page</span>
+                    </a>
+                    <a href="https://twitter.com/Nike"
+                        class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 17">
+                            <path fill-rule="evenodd"
+                                d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">Twitter page</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--! Footer -->
+
+    <!--? Hamburger Script -->
+    <script>
+        const navItems = document.querySelector('.items');
+
+        function onToggle(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navItems.classList.toggle('right-[7%]')
+        }
+    </script>
+
+    <!--? Flowbite Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+</body>
+
+</html>
